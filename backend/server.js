@@ -2,10 +2,13 @@ import express from 'express';
 import dotnev from 'dotenv';
 import userRoutes from './routes/userRoutes.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import connectDB from './config/db.js';
 
 dotnev.config();
-
 const PORT = process.env.PORT || 3000;
+
+connectDB();
+
 const app = express();
 
 app.use('/api/users', userRoutes);

@@ -47,7 +47,12 @@ Begin by creating one route, with it's simple controller, just to build out the 
     - Once we see that it's working we can switch our controllers to use an async handler
 
 5. Create a custom error handler
+    - the goal is to suppress the default html page that is rendered when an error is encountered
+    - this way we get a simple message and the stack trace when on dev environment
 
+6. Add the remaining routes
+    - first add the controllers
+    - then add the remaining routes
 
 
 ## Architeture - Folder structure
