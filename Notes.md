@@ -11,9 +11,17 @@ https://github.com/bradtraversy/mern-auth
 # Goal
 
 - Introduce MERN authentication with JWT
+- Build the API with express and MongoDB
+- Build the frontend with Vite and React
 - Use Redux toolkit to manage state
 
-## Steps
+## Architeture - Folder structure
+
+- The root will have our server-side package.json
+- The backend folder will hold the models, controllers, all the backend source code.
+- The frontend folder will hold all the React stuff
+
+## Steps -- Backend
 
 1. Overview
     - Start with the backend to build an API
@@ -52,11 +60,18 @@ Begin by creating one route, with it's simple controller, just to build out the 
 
 6. Add the remaining routes
     - first add the controllers
-    - then add the remaining routes
+    - then add the boilerplate for remaining routes
+
+7. Add the logic for the functionality of the first three routes: register, login, logout.
+
+8. Now we need to protect our routes.
+    - add an authMiddleware.js file with the protectRoutes method
+    - add the method to the server.js file for the routes we want to protect
+
+9. Now complete the remaining routes: /profile, get user and update user
 
 
-## Architeture - Folder structure
+## Steps - Frontend
 
-- The root will have our server-side package.json
-- The backend folder will hold the models, controllers, all the backend source code.
-- The frontend folder will hold all the React stuff
+1. Create a new Vite project: `npm create vite@latest frontend`
+
