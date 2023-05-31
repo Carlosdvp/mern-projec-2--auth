@@ -74,4 +74,10 @@ Begin by creating one route, with it's simple controller, just to build out the 
 ## Steps - Frontend
 
 1. Create a new Vite project: `npm create vite@latest frontend`
+    - setup the project
+    - clear out unnecessary boilerplate code
+    - add bootstrap and react-bootstrap
+
+2. Create our Components
+    - Header
 
