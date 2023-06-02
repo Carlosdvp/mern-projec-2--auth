@@ -78,6 +78,11 @@ Begin by creating one route, with it's simple controller, just to build out the 
     - clear out unnecessary boilerplate code
     - add bootstrap and react-bootstrap
 
-2. Create our Components
+2. Create our Components and Screens
     - Header
+    - Hero
 
+3. Add Redux-toolkit
+    - implement the boilderplate and add the imports to the required files
+
+4. 
