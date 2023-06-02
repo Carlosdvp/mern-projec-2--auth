@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
 import { toast } from 'react-toastify';
 import Loader from '../components/Loader';
-// import { useUpdateUserMutation } from '../slices/usersApiSlice';
-// import { setCredentials } from '../slices/authSlice';
+import { useUpdateUserMutation } from '../slices/usersApiSlice';
+import { setCredentials } from '../slices/authSlice';
 
 const ProfileScreen = () => {
   const [email, setEmail] = useState('');
@@ -14,7 +14,9 @@ const ProfileScreen = () => {
   const [password, setPassword]= useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+
   const { userInfo } = useSelector((state) => state.auth);
   const [updateProfile, { isLoading }] = useUpdateUserMutation();
 
@@ -85,6 +87,8 @@ const ProfileScreen = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
+
+        {isLoading && <Loader />}
 
         <Button type='submit' variant='primary' className='mt-3'>
           Update
