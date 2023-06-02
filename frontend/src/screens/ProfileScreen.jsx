@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import FormContainer from '../components/FormContainer';
 import { toast } from 'react-toastify';
 import Loader from '../components/Loader';
-import { useUpdateUserMutation } from '../slices/usersApiSlice';
-import { setCredentials } from '../slices/authSlice';
+// import { useUpdateUserMutation } from '../slices/usersApiSlice';
+// import { setCredentials } from '../slices/authSlice';
 
 const ProfileScreen = () => {
   const [email, setEmail] = useState('');

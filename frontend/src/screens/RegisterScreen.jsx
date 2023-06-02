@@ -4,8 +4,8 @@ import FormContainer from '../components/FormContainer';
 import Loader from '../components/Loader';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { useRegisterMutation } from '../slices/usersApiSlice';
-import { setCredentials } from '../slices/authSlice';
+// import { useRegisterMutation } from '../slices/usersApiSlice';
+// import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
 
 const RegisterScreen = () => {
@@ -94,7 +94,7 @@ const RegisterScreen = () => {
 
       <Row className='py-3'>
         <Col>
-          Already have an account? <Link to={`/login`}>Login</Link>
+          Already have an account? <Link to={'/login'}>Login</Link>
         </Col>
       </Row>
     </FormContainer>

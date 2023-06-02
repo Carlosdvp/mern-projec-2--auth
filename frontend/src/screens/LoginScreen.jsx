@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import FormContainer from '../components/FormContainer'
 import { useDispatch, useSelector } from 'react-redux'
-// import { useLoginMutation }
-// import {}
+// import { useLoginMutation } from '../slices/usersApiSlice';
+// import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify'
 import Loader from '../components/Loader'
 
@@ -54,7 +54,7 @@ const LoginScreen = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Enter password'
+            placeholder='Enter Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
